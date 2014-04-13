@@ -7,5 +7,5 @@
 *
 * @package kick-out
 */
-_e('Hi kick-out', 'kickout');
+_e('Hi kick-out', TEXT_DOMINE);
 ?>

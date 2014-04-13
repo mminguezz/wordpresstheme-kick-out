@@ -7,4 +7,4 @@
 ~~He intentado mantener al minimo el numero de etiquetas HTML.~~
 
 ### CSS 
-~~Uso Sass con un [compilador PHP](http://leafo.net/scssphp/] para poder incluir configuraciones de estilo desde el panel de administrador a las hojas de estilo~~
+~~Uso Sass con un [compilador PHP](http://leafo.net/scssphp/) para poder incluir configuraciones de estilo desde el panel de administrador a las hojas de estilo~~
