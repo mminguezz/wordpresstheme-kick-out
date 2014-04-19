@@ -149,6 +149,12 @@ itemscope itemtype="http://schema.org/Article"
 */
 
 /*
+
+hacer function para GoogleAnalytics.
+
+*/
+
+/*
  // hacer una funcion para description y para title con esto
 is_404()
 is_search()

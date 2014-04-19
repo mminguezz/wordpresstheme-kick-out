@@ -1,0 +1,34 @@
+//Tipografias
+$font-family-sans-serif: 	Helvetica, Arial, sans-serif;
+$font-family-serif: 		Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: 	Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-family-base: $font-family-sans-serif;
+
+$my-font-size-base: 16;
+$browser-size-base: font-size-base( $my-font-size-base); // Default si el body es 100% son 16px
+
+
+
+//Colores
+$black: #2C2C2C;
+$blue: #293746;
+$red:#E74C3C;
+$grey:#939393;
+$white:#FFFFFF;
+
+$title: $blue;
+$sub-title: $red;
+
+$shadow: $grey;
+$hr: $black;
+$bg: $white;
+
+//Columnas
+$padding-half: 10px;  // la mitad de laseparacion de entre cajas
+$container-max-width: 1200px;
+$log-size-mobile: 767px;
+
+//$all-columns: '33', '66','75', '50','25';
+
+//$all-mobile-columns:'50';

@@ -1,0 +1,11 @@
+// Convierte pixeles en em.
+// ej: h2{font-size: em(20);}
+
+// ej: .sidebar-h2{font-size: em(24, 12);} //si el contenedor tienen un tamaño de fuente de 12 y quieres 24px
+@function em($pixels, $context: $my-font-size-base) {
+	@return #{$pixels/$context}em;
+}
+
+@function font-size-base($base-pixels) {
+	@return ($base-pixels/16)*100%;
+}

@@ -1,0 +1,75 @@
+h1{font-size: em(32);}
+h2{font-size: em(28);}
+h3{font-size: em(24);}
+h4{font-size: em(22);}
+h5{font-size: em(20);}
+h6{font-size: em(18);}
+
+pre,
+code{
+	font-family: $font-family-monospace;
+}
+
+hr{
+	border: 0 $color-hr solid;
+	border-top-width: 2px;
+	border-bottom-width: 1px;
+	border-bottom-color:lighten($color-hr, 33%);
+	clear: both;
+	height: 0;
+}
+
+ol{
+	list-style: decimal;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+li{
+	margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure{
+	margin-bottom: 20px;
+}
+
+body{
+	text-rendering: optimizelegibility;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $padding-half;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $padding-half;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+.text-center{text-align: center;}
+

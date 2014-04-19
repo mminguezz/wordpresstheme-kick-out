@@ -1,0 +1,20 @@
+/*
+Theme Name: kickout
+Theme URI: https://github.com/mminguezz/wordpresstheme-kick-out
+Author: @m_minguezz
+Author URI: http://www.intheloop.es/
+Description: This theme is a theme base.
+Version: 0.1
+Text Domain: minguezz
+Domain Path: /lang/
+Tags: theme base, kickout, mminguezz
+
+This theme, like WordPress.
+*/
+
+@import "functions";
+@import "config";
+
+@import "normalice";
+@import "base";
+@import "module";
