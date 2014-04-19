@@ -29,4 +29,5 @@
 
 # PLUGINS
 	include( TEMPLATEPATH . "/_kickout/plugins/widget.php" );
+	include( TEMPLATEPATH . "/_kickout/plugins/seo.php" )
 ?>
