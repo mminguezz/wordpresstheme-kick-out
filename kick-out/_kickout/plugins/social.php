@@ -17,8 +17,9 @@ function social(){
 SI es un article añadir a la etiqueta html
 itemscope itemtype="http://schema.org/Article"
 */
+
 /*
- <!-- Google Authorship and Publisher Markup -->
+<!-- Google Authorship and Publisher Markup -->
 <link rel="author" href="https://plus.google.com/[Google+_Profile]/posts"/>
 <link rel="publisher" href=”https://plus.google.com/[Google+_Page_Profile]"/>
 
@@ -90,48 +91,6 @@ itemscope itemtype="http://schema.org/Article"
 <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
 <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
 <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
-
-*/
-
-/*
-
-hacer function para GoogleAnalytics.
-
-*/
-
-/*
- // hacer una funcion para description y para title con esto
-is_404()
-is_search()
-
-is_front_page() || is_home()
-
-is_singular()  // Returns true for any is_single(), is_page(), or is_attachment().
-	is_single()
-	is_page()
-	is_attachment()
-	is_post_type_archive( $post_type )
-
-is_paged()
-
-is_sticky() //post pegajoso
-is_new_day()
-
-is_archive()
-
-	is_date()
-	is_year()
-	is_month()
-	is_day()
-	is_time()
-
-	is_tax()
-	is_category()
-	is_tag()
-
-	is_author()
-
-// Para un multisite hay mas condicionales
 
 */
 
