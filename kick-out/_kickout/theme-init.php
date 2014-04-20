@@ -5,7 +5,14 @@
 add_action( 'after_setup_theme', 'kickout_theme_support' );
 add_action( 'after_setup_theme', 'kickout_theme_menus' );
 
-add_filter('user_contactmethods','new_contactmethods',10,1);
+add_filter('user_contactmethods','kickout_contactmethods',10,1);
+
+
+// Elimina si no los necesitas
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'rsd_link');
+
 
 function kickout_theme_support() {
 	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
@@ -30,6 +37,7 @@ function kickout_theme_menus(){
 function kickout_contactmethods( $contactmethods ) {
 	$contactmethods['twitter'] = __('Twitter', TEXT_DOMINE ); // Add Twitter
 	$contactmethods['facebook'] = __('Facebook', TEXT_DOMINE ); // Add Facebook
+	$contactmethods['googleplus'] = __('Google +', TEXT_DOMINE ); // Add Facebook
 	//$contactmethods['skype'] = __('Skype Username', TEXT_DOMINE ); // Add skype
 	unset($contactmethods['yim']); // Remove Yahoo IM
 	unset($contactmethods['aim']); // Remove AIM

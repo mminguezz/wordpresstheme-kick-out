@@ -10,6 +10,7 @@ add_action( 'wp_head', 'kickout_site_verify' );
 add_action( 'wp_head', 'kickout_keywords' );
 add_action( 'wp_head', 'kickout_robots' );
 
+
 function kickout_meta_description(){
 		$description = kickout_custom_description();
 	echo '<meta name="description" content="' . esc_attr( strip_tags( stripslashes( $description ) ) ) . '" >' . "\n";

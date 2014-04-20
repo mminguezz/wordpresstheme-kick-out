@@ -5,5 +5,13 @@
 *
 * @package kick-out
 */
-_e('Hi kick-out, sidebar', TEXT_DOMINE);
 ?>
+	<section id="secondary" class="widget-area" role="complementary">
+		<?php if ( ! dynamic_sidebar( ) ) : ?>
+
+			<aside id="search" class="widget widget_search">
+				<?php get_search_form(); ?>
+			</aside>
+
+		<?php endif; ?>
+	</section>
