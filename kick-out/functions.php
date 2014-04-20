@@ -12,7 +12,7 @@
 
 # GENERAL
 	include( TEMPLATEPATH . "/_kickout/theme-init.php" );  		// Confuguraciones de WordPress
-	include( TEMPLATEPATH . "/_kickout/theme-custmize.php" );   // Funciones personalizadas para el tema
+	include( TEMPLATEPATH . "/_kickout/theme-customize.php" );   // Funciones personalizadas para el tema
 
 # DEBUG
 	if (WP_DEBUG){

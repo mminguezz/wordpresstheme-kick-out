@@ -28,7 +28,7 @@ function kickout_theme_menus(){
 
 
 function kickout_contactmethods( $contactmethods ) {
-	$contactmethods['twitter'] = __('Twitter', ); // Add Twitter
+	$contactmethods['twitter'] = __('Twitter', TEXT_DOMINE ); // Add Twitter
 	$contactmethods['facebook'] = __('Facebook', TEXT_DOMINE ); // Add Facebook
 	//$contactmethods['skype'] = __('Skype Username', TEXT_DOMINE ); // Add skype
 	unset($contactmethods['yim']); // Remove Yahoo IM
