@@ -7,5 +7,7 @@
 *
 * @package kick-out
 */
+get_header();
+
 _e('Hi kick-out, index', TEXT_DOMINE);
 ?>
