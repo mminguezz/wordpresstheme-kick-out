@@ -11,10 +11,10 @@ code{
 }
 
 hr{
-	border: 0 $color-hr solid;
+	border: 0 $hr solid;
 	border-top-width: 2px;
 	border-bottom-width: 1px;
-	border-bottom-color:lighten($color-hr, 33%);
+	border-bottom-color:lighten($hr, 33%);
 	clear: both;
 	height: 0;
 }
@@ -55,7 +55,7 @@ body{
 	text-rendering: optimizelegibility;
 }
 
-/* Alignment */
+// Alignment
 .alignleft {
 	display: inline;
 	float: left;

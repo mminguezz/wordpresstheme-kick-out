@@ -7,7 +7,7 @@
 * @package kick-out
 */
 
-// ppp ( $val ); -> Imprime $val legible para humanos sobre una variable 
+// ppp ( $val ); -> Imprime $val legible para humanos sobre una variable
 
 function ppp ( $val ) {
 	print ( '<pre>' )  ;
@@ -19,4 +19,8 @@ function ppp ( $val ) {
 	print ( '</pre><br>' ) ;
 }
 
+
+if ( WP_DEBUG ) {
+	// Compila SASS a CSS con cada refresco de pagigina.
+}
 ?>
