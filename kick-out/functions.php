@@ -22,6 +22,9 @@
 	include( TEMPLATEPATH . "/_kickout/register/scripts.php" );
 	include( TEMPLATEPATH . "/_kickout/register/styles.php" );
 
+# CUSTOM POST TYPE
+	include( TEMPLATEPATH . "/_kickout/post_types/porfolio.php" );
+
 # PLUGINS
 	include( TEMPLATEPATH . "/_kickout/plugins/widget.php" );
 	include( TEMPLATEPATH . "/_kickout/plugins/seo.php" );
