@@ -21,6 +21,7 @@ function ppp ( $val ) {
 
 
 if ( WP_DEBUG ) {
-	// Compila SASS a CSS con cada refresco de pagigina.
+	// Compila SASS a CSS con cada refresco de pagina.
+	compile_style();
 }
 ?>

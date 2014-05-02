@@ -14,11 +14,6 @@
 	include( TEMPLATEPATH . "/_kickout/theme-init.php" );  		// Confuguraciones de WordPress
 	include( TEMPLATEPATH . "/_kickout/theme-customize.php" );   // Funciones personalizadas para el tema
 
-# DEBUG
-	if (WP_DEBUG){
-		include( TEMPLATEPATH . "/_kickout/theme-debug.php" );  // Funciones usadas durante la creaccion de temas completos
-	}
-
 # ADMIN
 	include( TEMPLATEPATH . "/_kickout/admin/dashboard-setup.php" );
 	include( TEMPLATEPATH . "/_kickout/admin/page-options.php" );
@@ -29,5 +24,12 @@
 
 # PLUGINS
 	include( TEMPLATEPATH . "/_kickout/plugins/widget.php" );
-	include( TEMPLATEPATH . "/_kickout/plugins/seo.php" )
+	include( TEMPLATEPATH . "/_kickout/plugins/seo.php" );
+
+
+# DEBUG
+	if (WP_DEBUG){
+		include( TEMPLATEPATH . "/_kickout/theme-debug.php" );  // Funciones usadas durante la creaccion de temas completos
+	}
+
 ?>

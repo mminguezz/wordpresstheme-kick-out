@@ -24,11 +24,13 @@ add_action( 'wp_enqueue_scripts', 'kickou_scripts' );
 
 require ( TEMPLATEPATH . '/_kickout/register/tools/scssphp.php');
 
-$header_wp_style = 'h1 a{color: red !important;}'; // aqui debemos recoger los estilos de las paginas del administrador
 
 
-scss_compile( TEMPLATEPATH . '/css/style.scss', TEMPLATEPATH . '/style.css', $header_wp_style);
+function compile_style() {
+	$header_wp_style = 'h1 a{color: green !important;}'; // aqui debemos recoger los estilos de las paginas del administrador
 
+	scss_compile( TEMPLATEPATH . '/css/style.scss', TEMPLATEPATH . '/style.css', $header_wp_style);
+}
 
 function scss_compile($fname, $fnameout = null, $wpcss = '') {
 	//$start = microtime(true);
