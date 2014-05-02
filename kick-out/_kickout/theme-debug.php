@@ -23,5 +23,7 @@ function ppp ( $val ) {
 if ( WP_DEBUG ) {
 	// Compila SASS a CSS con cada refresco de pagina.
 	compile_style();
+	// minificalos archivos JS registrados
+	minify_javascript();
 }
 ?>

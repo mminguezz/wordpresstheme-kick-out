@@ -1,29 +1,12 @@
 <?php
 
-
-
-
-
-
-
-
-
-##### Llamamos a los script necesarios
-
-function kickou_scripts() {
+function kickou_style() {
 	/** style.css **/
 	wp_enqueue_style( 'kickou-style', get_stylesheet_uri() );
 }
-add_action( 'wp_enqueue_scripts', 'kickou_scripts' );
-
-
-
-
-
-
+add_action( 'wp_enqueue_scripts', 'kickou_style' );
 
 require ( TEMPLATEPATH . '/_kickout/register/tools/scssphp.php');
-
 
 
 function compile_style() {
