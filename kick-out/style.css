@@ -205,6 +205,13 @@ li {
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {
   margin-bottom: 20px; }
 
+*::selection {
+  color: #e74c3c;
+  background-color: #293746; }
+  *::-moz-selection {
+    color: #e74c3c;
+    background-color: #293746; }
+
 .alignleft {
   display: inline;
   float: left;
@@ -233,13 +240,6 @@ a {
     color: #939393; }
   a:visited {
     color: #293746; }
-
-*::selection {
-  color: #e74c3c;
-  background-color: #293746; }
-  *::-moz-selection {
-    color: #e74c3c;
-    background-color: #293746; }
 
 i {
   opacity: 0.5;
