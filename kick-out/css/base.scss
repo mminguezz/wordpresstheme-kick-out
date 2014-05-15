@@ -1,3 +1,7 @@
+body{
+	text-rendering: optimizelegibility;
+}
+
 h1{font-size: em(32);}
 h2{font-size: em(28);}
 h3{font-size: em(24);}
@@ -51,8 +55,10 @@ figure{
 	margin-bottom: 20px;
 }
 
-body{
-	text-rendering: optimizelegibility;
+//revisar por que no funciona agrupadas
+*{
+	&::selection{color:$selection-color;background-color:$selection-bg;}
+	&::-moz-selection {color:$selection-color;background-color:$selection-bg;}
 }
 
 // Alignment
@@ -73,3 +79,21 @@ body{
 }
 .text-center{text-align: center;}
 
+
+// demo de guncionalidades
+a{
+	@include link( $blue, $red, $grey, $blue);
+}
+p{
+	@extend %box-model;
+}
+
+
+
+i{
+	@include opacity(0.5);
+}
+
+.bgImage{
+	@include bgImgRetina('/img/cosa', 'jpg');
+}

@@ -24,6 +24,12 @@ $shadow: $grey;
 $hr: $black;
 $bg: $white;
 
+$selection-color: $red;
+$selection-bg: $blue;
+
+
+
+
 //Columnas
 $padding-half: 10px;  // la mitad de laseparacion de entre cajas
 $container-max-width: 1200px;
@@ -32,3 +38,6 @@ $log-size-mobile: 767px;
 //$all-columns: '33', '66','75', '50','25';
 
 //$all-mobile-columns:'50';
+
+
+$default-prefixes: 'webkit', 'moz', 'khtml', 'ms', 'o';
