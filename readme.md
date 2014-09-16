@@ -1,4 +1,6 @@
-# WordPress Theme Kick-Out
+
+
+# WordPress Theme Kick-Out (en desarrollo)
 ## El "pistoletazo de salida" para hacer temas de WordPress
 
 'Kick-Out' pretende ser un tema base rozando la linea con un framework para desarrollar temas completos de WordPress.
