@@ -4,6 +4,7 @@
 
 add_action( 'after_setup_theme', 'kickout_theme_support' );
 add_action( 'after_setup_theme', 'kickout_theme_menus' );
+add_action( 'after_setup_theme', 'kickout_theme_setup' );
 
 add_filter('user_contactmethods','kickout_contactmethods',10,1);
 
@@ -28,22 +29,26 @@ function kickout_theme_support() {
 
 function kickout_theme_menus(){
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', "TEXT_DOMINE" ),
-		'footer' => __( 'Footer Menu', "TEXT_DOMINE" )
+		'primary' => __( 'Primary Menu', "TEXT_DOMAIN" ),
+		'footer' => __( 'Footer Menu', "TEXT_DOMAIN" )
 	) );
 }
 
 
 function kickout_contactmethods( $contactmethods ) {
-	$contactmethods['twitter'] = __('Twitter', "TEXT_DOMINE" ); // Add Twitter
-	$contactmethods['facebook'] = __('Facebook', "TEXT_DOMINE" ); // Add Facebook
-	$contactmethods['googleplus'] = __('Google +', "TEXT_DOMINE" ); // Add Facebook
-	//$contactmethods['skype'] = __('Skype Username', "TEXT_DOMINE" ); // Add skype
+	$contactmethods['twitter'] = __('Twitter', "TEXT_DOMAIN" ); // Add Twitter
+	$contactmethods['facebook'] = __('Facebook', "TEXT_DOMAIN" ); // Add Facebook
+	$contactmethods['googleplus'] = __('Google +', "TEXT_DOMAIN" ); // Add Facebook
+	//$contactmethods['skype'] = __('Skype Username', "TEXT_DOMAIN" ); // Add skype
 	unset($contactmethods['yim']); // Remove Yahoo IM
 	unset($contactmethods['aim']); // Remove AIM
 	unset($contactmethods['jabber']); // Remove Jabber
 	return $contactmethods;
 }
 
+
+function my_theme_setup(){
+    load_theme_textdomain( "TEXT_DOMAIN", TEMPLATEPATH . '/lang');
+}
 
 ?>

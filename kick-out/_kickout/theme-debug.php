@@ -16,14 +16,14 @@ function ppp ( $val ) {
 	} else {
 		var_dump ( $val ) ;
 	}
-	print ( '</pre><br>' ) ;
+	print ( '</pre><hr>' ) ;
 }
 
 
-if ( WP_DEBUG ) {
-	// Compila SASS a CSS con cada refresco de pagina.
+
+// Compila SASS a CSS con cada refresco de pagina.
 	compile_style();
-	// minificalos archivos JS registrados
+// minificalos archivos JS registrados
 	minify_javascript();
-}
+
 ?>

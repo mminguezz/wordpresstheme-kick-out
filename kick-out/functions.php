@@ -10,8 +10,8 @@
 	define( "THEME_URL" , get_template_directory_uri() );
 
 # GENERAL
-	include( TEMPLATEPATH . "/_kickout/theme-init.php" );  		// Confuguraciones de WordPress
-	include( TEMPLATEPATH . "/_kickout/theme-customize.php" );   // Funciones personalizadas para el tema
+	include( TEMPLATEPATH . "/_kickout/theme-init.php" );				// Configuraciones de WordPress
+	include( TEMPLATEPATH . "/_kickout/theme-customize.php" );			// Funciones personalizadas para el tema
 
 # ADMIN
 	include( TEMPLATEPATH . "/_kickout/admin/dashboard-setup.php" );
