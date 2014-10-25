@@ -28,17 +28,17 @@ function kickout_theme_support() {
 
 function kickout_theme_menus(){
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', TEXT_DOMINE ),
-		'footer' => __( 'Footer Menu', TEXT_DOMINE )
+		'primary' => __( 'Primary Menu', "TEXT_DOMINE" ),
+		'footer' => __( 'Footer Menu', "TEXT_DOMINE" )
 	) );
 }
 
 
 function kickout_contactmethods( $contactmethods ) {
-	$contactmethods['twitter'] = __('Twitter', TEXT_DOMINE ); // Add Twitter
-	$contactmethods['facebook'] = __('Facebook', TEXT_DOMINE ); // Add Facebook
-	$contactmethods['googleplus'] = __('Google +', TEXT_DOMINE ); // Add Facebook
-	//$contactmethods['skype'] = __('Skype Username', TEXT_DOMINE ); // Add skype
+	$contactmethods['twitter'] = __('Twitter', "TEXT_DOMINE" ); // Add Twitter
+	$contactmethods['facebook'] = __('Facebook', "TEXT_DOMINE" ); // Add Facebook
+	$contactmethods['googleplus'] = __('Google +', "TEXT_DOMINE" ); // Add Facebook
+	//$contactmethods['skype'] = __('Skype Username', "TEXT_DOMINE" ); // Add skype
 	unset($contactmethods['yim']); // Remove Yahoo IM
 	unset($contactmethods['aim']); // Remove AIM
 	unset($contactmethods['jabber']); // Remove Jabber

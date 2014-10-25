@@ -25,7 +25,7 @@ itemscope itemtype="http://schema.org/Article"
 
 
 // http://www.google.com/webmasters/tools/richsnippets
-// SI es un article añadir estas etiquetas al  head
+// SI es un article añadir estas etiquetas al head
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="The Name or Title Here">
 <meta itemprop="description" content="This is the page description">
@@ -82,7 +82,7 @@ itemscope itemtype="http://schema.org/Article"
 
 
 <meta name="revisit-after" content="30 days">
-<meta name="distribution" content="web">
+
 
 
 <link type="image/vnd.microsoft.icon" rel="shortcut icon" href="favicon.ico">

@@ -6,7 +6,6 @@
 */
 
 # DEFINES
-	define( "TEXT_DOMINE" , 'kickout' );
 	define( "SITE_URL" , get_bloginfo('url') );
 	define( "THEME_URL" , get_template_directory_uri() );
 

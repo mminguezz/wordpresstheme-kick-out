@@ -108,7 +108,8 @@ function kickout_custom_description(){
 		$description = 'Pendiente de hacer';
 	} else if ( is_archive() ) {
 		$description = 'Pendiente de hacer';
-		/*
+		/* condicional tags
+		http://codex.wordpress.org/Conditional_Tags
 			is_date()
 			is_year()
 			is_month()
