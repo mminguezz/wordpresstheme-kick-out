@@ -18,6 +18,8 @@ remove_action('wp_head', 'rsd_link');
 function kickout_theme_support() {
 	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'menus' );
+	add_theme_support( 'widgets' );
 //	add_theme_support( 'custom-background' );
 	remove_theme_support( 'custom-background' );
 //	add_theme_support( 'custom-header' );
