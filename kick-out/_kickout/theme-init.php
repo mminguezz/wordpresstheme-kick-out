@@ -47,7 +47,7 @@ function kickout_contactmethods( $contactmethods ) {
 }
 
 
-function my_theme_setup(){
+function kickout_theme_setup(){
     load_theme_textdomain( "TEXT_DOMAIN", TEMPLATEPATH . '/lang');
 }
 
