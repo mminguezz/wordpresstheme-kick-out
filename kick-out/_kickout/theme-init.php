@@ -8,6 +8,7 @@ add_action( 'after_setup_theme', 'kickout_theme_setup' );
 
 add_filter('user_contactmethods','kickout_contactmethods',10,1);
 
+add_filter( 'excerpt_length', 'kickout_excerpt_long', 999 );
 
 // Elimina si no los necesitas
 remove_action('wp_head', 'wp_generator');
@@ -26,7 +27,7 @@ function kickout_theme_support() {
 	remove_theme_support( 'custom-header' );
 //	add_theme_support( 'automatic-feed-links' );
 	remove_theme_support( 'automatic-feed-links' );
-	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form') );
+	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 }
 
 function kickout_theme_menus(){
@@ -52,5 +53,12 @@ function kickout_contactmethods( $contactmethods ) {
 function kickout_theme_setup(){
     load_theme_textdomain( "TEXT_DOMAIN", TEMPLATEPATH . '/lang');
 }
+
+
+// modificamos la longitud del extracto
+function kickout_excerpt_long(){
+    return 21;
+}
+
 
 ?>

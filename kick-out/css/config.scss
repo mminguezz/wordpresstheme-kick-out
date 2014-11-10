@@ -11,11 +11,30 @@ $browser-size-base: font-size-base( $my-font-size-base); // Default si el body e
 
 
 //Colores
-$black: #2C2C2C;
-$blue: #293746;
+
+
+
+$black: #3D3E45;
+$white: #F5F5F5;
+	$grey: $white - $black;
+
+$yellow: #FBCF61;
+$green: #6BD57E;
+	$green-apple: #A8D164;
+
+$pink: #FF6F6F;
+$purple: #8981E4;
+$blue: #57CFF4;
+	$blue-aqua:#0ED4C8;
+
+$salmon:#FE7C60;
+
 $red:#E74C3C;
-$grey: #939393;
-$white: #FFFFFF;
+
+
+
+
+
 
 $title: $blue;
 $sub-title: $red;

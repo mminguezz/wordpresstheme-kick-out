@@ -20,6 +20,8 @@
 # REGISTER
 	include( TEMPLATEPATH . "/_kickout/register/scripts.php" );
 	include( TEMPLATEPATH . "/_kickout/register/styles.php" );
+	include( TEMPLATEPATH . "/_kickout/register/images.php" );  // Añade nuevos tamaños de imagen
+	include( TEMPLATEPATH . "/_kickout/register/sidebars.php" );  // Añade areas de sidebar
 
 # CUSTOM POST TYPE
 	include( TEMPLATEPATH . "/_kickout/post_types/porfolio.php" );

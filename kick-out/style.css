@@ -185,10 +185,10 @@ pre, code {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
 hr {
-  border: 0 #2c2c2c solid;
+  border: 0 #3d3e45 solid;
   border-top-width: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: #808080;
+  border-bottom-color: #8f909c;
   clear: both;
   height: 0; }
 
@@ -207,10 +207,10 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure
 
 *::selection {
   color: #e74c3c;
-  background-color: #293746; }
+  background-color: #57cff4; }
   *::-moz-selection {
     color: #e74c3c;
-    background-color: #293746; }
+    background-color: #57cff4; }
 
 .alignleft {
   display: inline;
@@ -231,15 +231,15 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure
   text-align: center; }
 
 a {
-  color: #293746; }
+  color: #57cff4; }
   a:hover, a:focus, a:visited:hover {
     color: #e74c3c; }
   a:focus {
     outline: 1px dashed #e74c3c; }
   a:active {
-    color: #939393; }
+    color: #b8b7b0; }
   a:visited {
-    color: #293746; }
+    color: #57cff4; }
 
 i {
   opacity: 0.5;
