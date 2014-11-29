@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+form{
+    overflow: auto;
+}
+
+input[type="text"],
+textarea,
+input[type="submit"],
+input[type="button"],
+.styled{
+    background-color: $bg-blue;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 12em;
+    &.small{
+        width: 6em;
+    }
+}
+
+input,select,textarea{
+    font-size: 1em;
+    outline: none;
+    font-family: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+input:invalid {
+    border:1px solid red;
+}
+
+//input:valid {border:1px solid green;}
+
+//input:required + label::after { content: "*"; }
+
+//input[type='number']:out-of-range { border:1px solid red; }
+//input[type='number']:in-range { border:1px solid green; }
+textarea:read-only { user-select: none; }
+
+input[type="text"],textarea{
+    padding: 0.3em 0.5em;
+    &:focus{
+      border-color: $black;
+    }
+}
+
+.ie9 input[type="text"]{
+    line-height: normal
+}
+
+input[type="submit"],input[type="button"]{
+    padding: 0.4em;
+    &:active{
+      box-shadow: none
+    }
+}
+
+
+
+// estilos de los select
+.styled{
+    overflow: hidden;
+    padding: 0;
+    background: url("img/formelements-select.png") no-repeat scroll bottom right $bg-blue;
+    select{
+        width: 115%;
+        background-color: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        border: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        padding: 0.3em 0.5em
+    }
+
+}
+
+.ie7 div.styled{
+    border: none
+}
+
+// form de la calculadora
+#form-calculator{
+
+}
+
+
+

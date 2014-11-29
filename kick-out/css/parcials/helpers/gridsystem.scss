@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Grid System - idea Unsemantics
+   ========================================================================== */
+
+
+/* Hack if ie7
+   ========================================================================== */
+
+/* Mixins for columns */
+
+@mixin ie7-margin($margin) {
+  $margin: unquote($margin);
+
+  $val: unquote("expression((!this.className.match(/col-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && \"#{$margin}\")");
+
+  @if $ie7-support {
+    // [1] Remove padding, since IE7 doesn't
+    //     support "box-sizing: border-box".
+
+    //* <IE7> */
+    *padding-left: 0;
+    *padding-right: 0;
+    //* </IE7> */
+
+    //
+    // [2] Fake what would normally be padding,
+    //     for browsers that support box-sizing.
+
+    & > * {
+      //* <IE7> */
+      *margin-left: $val;
+      *margin-right: $val;
+      //* </IE7> */
+    }
+  }
+}
+
+@mixin ie7-width($num) {
+  $decimal: unquote($num) / 100;
+
+  @if $ie7-support {
+    //* <IE7> */
+    *width: unquote("expression(Math.floor(#{$decimal} * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + \"px\")");
+    //* </IE7> */
+  }
+}
+
+
+
+
+
+
+/* Clear floated elements:
+   ========================================================================== */
+
+/*  http://sonspring.com/journal/clearing-floats */
+
+%clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+%clearfix:before,
+%clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+%clearfix:after {
+  clear: both;
+}
+
+/* <IE7> */
+@if $ie7-support {
+  %clearfix {
+
+    *zoom: 1;
+  }
+}
+
+/* Container:
+   ========================================================================== */
+%col-container {
+  @extend %clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  @if $container-max-width != none {
+    max-width: $container-max-width;
+  }
+  // Set if gutter is non-zero.
+  @if $gutter-half != 0 {
+    padding-left: $gutter-half;
+    padding-right: $gutter-half;
+  }
+}
+
+/* Columns:
+   ========================================================================== */
+
+/* Extend all columns */
+%columns-all {
+  @extend %clearfix;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // Set if gutter is non-zero.
+  @if $gutter-half != 0 {
+    padding-left: $gutter-half;
+    padding-right: $gutter-half;
+    @include ie7-margin($gutter-half);
+  }
+}
+
+/* Parent for other grid columns  */
+%columns-parent {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Define % width columns  */
+@each $col in 20, 25, 33, 40, 50, 60, 66, 75, 100 {
+  $percent: $col * 1%;
+  %col-#{$col} {
+    @extend %columns-all;
+    @include ie7-width($col);
+    width: $percent;
+  }
+}
+
+
+

@@ -2,18 +2,6 @@ body{
 	text-rendering: optimizelegibility;
 }
 
-h1{font-size: em(32);}
-h2{font-size: em(28);}
-h3{font-size: em(24);}
-h4{font-size: em(22);}
-h5{font-size: em(20);}
-h6{font-size: em(18);}
-
-pre,
-code{
-	font-family: $font-family-monospace;
-}
-
 hr{
 	border: 0 $hr solid;
 	border-top-width: 2px;
@@ -33,7 +21,7 @@ ul{
 }
 
 li{
-	margin-left: 30px;
+	margin-left: $padding-half;
 }
 
 p,
@@ -52,13 +40,19 @@ table,
 address,
 fieldset,
 figure{
-	margin-bottom: 20px;
+	margin-bottom: $padding-half;
 }
 
 //revisar por que no funciona agrupadas
 *{
-	&::selection{color:$selection-color;background-color:$selection-bg;}
-	&::-moz-selection {color:$selection-color;background-color:$selection-bg;}
+	&::selection{
+		color:$selection-color;
+		background-color:$selection-bg;
+	}
+	&::-moz-selection {
+		color:$selection-color;
+		background-color:$selection-bg;
+	}
 }
 
 // Alignment
@@ -77,23 +71,6 @@ figure{
 	display: block;
 	margin: 0 auto;
 }
-.text-center{text-align: center;}
+.text-center{ text-align: center; }
 
 
-// demo de guncionalidades
-a{
-	@include link( $blue, $red, $grey, $blue);
-}
-p{
-	@extend %box-model;
-}
-
-
-
-i{
-	@include opacity(0.5);
-}
-
-.bgImage{
-	@include bgImgRetina('/img/cosa', 'jpg');
-}

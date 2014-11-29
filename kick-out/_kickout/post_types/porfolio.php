@@ -1,6 +1,6 @@
 <?php
 // Register Custom Post Type
-function register_custom_post_type() {
+function register_custom_post_type_porfolio() {
 
 	$labels = array(
 		'name'                => _x( 'Porfolios', 'Post Type General Name', 'kickout' ),
@@ -30,7 +30,7 @@ function register_custom_post_type() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 10,
-		'menu_icon'           => THEME_URL . '/_kickout/post_types/img/ico-porfolio.png',
+		'menu_icon'           => 'dashicons-edit',
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
@@ -42,5 +42,5 @@ function register_custom_post_type() {
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'register_custom_post_type', 0 );
+add_action( 'init', 'register_custom_post_type_porfolio', 0 );
 ?>

@@ -12,9 +12,34 @@ Tags: theme base, kickout, mminguezz
 This theme, like WordPress.
 */
 @import "config";
-@import "functions";
-@import "module";
+
+@import "helpers/functions";
+@import "helpers/gridsystem";
+@import "helpers/module";
 
 
-@import "normalice";
-@import "base";
+@import "base/normalice";
+@import "base/base";
+@import "base/text";
+
+// @import "modules/algo";
+// @import "vendors/algo";
+
+@import "skin/theme";
+@import "skin/rwd";
+
+// demo de funcionalidades
+a{
+	//@include link( $blue, $red, $grey, $blue);
+}
+p{
+	@extend %box-model;
+}
+
+i{
+	//@include opacity(0.5);
+}
+
+.bgImage{
+	//@include bgImgRetina('/img/cosa', 'jpg');
+}

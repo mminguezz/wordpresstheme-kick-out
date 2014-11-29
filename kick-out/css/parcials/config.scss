@@ -1,4 +1,7 @@
-//Tipografias
+
+/* typography
+   ========================================================================== */
+
 $font-family-sans-serif: 	Helvetica, Arial, sans-serif;
 $font-family-serif: 		Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: 	Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -10,9 +13,8 @@ $browser-size-base: font-size-base( $my-font-size-base); // Default si el body e
 
 
 
+
 //Colores
-
-
 
 $black: #3D3E45;
 $white: #F5F5F5;
@@ -39,15 +41,18 @@ $red:#E74C3C;
 $title: $blue;
 $sub-title: $red;
 
+
+
 $shadow: $grey;
 $hr: $black;
 $bg: $white;
 
 $selection-color: $red;
 $selection-bg: $blue;
+$input-border-focus: $salmon;
 
 
-
+$ie7-support: true;
 
 //Columnas
 $padding-half: 10px;  // la mitad de laseparacion de entre cajas

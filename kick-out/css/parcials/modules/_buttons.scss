@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Buttons Module
+   ========================================================================== */
+
+// Revisra btn para hacerlo blanco
+%btn{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+  padding: 6px 12px 3px;
+  text-align: center;
+  vertical-align: middle;
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px 1px 2px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.60);
+  text-transform: uppercase;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.btn_blue{
+	@extend %btn;
+	color: $white;
+	background-color: $blue;
+}
+
+.btn-close{
+  @extend .btn_blue;
+  &:after{
+    content: 'x';
+    border-left: 1px solid darken($blue, 15%);
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+}
+
+
+.btn_plus{
+  @extend %btn;
+  color: $blue;
+  border-color: $blue;
+  margin-right: $space*2;
+  background-color: $white;
+}
+
+.btn_white{
+  @extend %btn;
+  box-shadow: 0 0 3px $blue;
+  padding: $space $space*2;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-top: 0;
+
+
+}

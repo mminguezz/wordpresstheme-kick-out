@@ -1,0 +1,18 @@
+/* Headings
+   ========================================================================== */
+
+h1{font-size: em(32);}
+h2{font-size: em(28);}
+h3{font-size: em(24);}
+h4{font-size: em(22);}
+h5{font-size: em(20);}
+h6{font-size: em(18);}
+
+
+/* Pre and Code
+   ========================================================================== */
+
+pre,
+code{
+	font-family: $font-family-monospace;
+}

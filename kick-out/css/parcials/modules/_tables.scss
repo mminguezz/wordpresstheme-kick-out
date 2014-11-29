@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table{
+    margin-bottom: $space*2;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 3px solid $blue-dark;
+    color: $blue-dark
+}
+
+caption{
+    margin-bottom: $space;
+}
+
+tr:nth-of-type(odd){
+    background: $bg-blue;
+}
+
+thead th{
+    background-color: $blue-dark;
+    color: $white;
+}
+
+td,th{
+    padding: 6px;
+    vertical-align: top
+}
+
+th{
+    font-weight: bold
+}
+
+td{
+    min-width: 120px
+}
+
+.bigdata{
+    display: block;
+    position: relative;
+    clear: both;
+    border-bottom: 0px solid $blue-dark;
+    caption, th{
+        display: block
+    }
+    thead, tbody{
+        border: 3px solid $blue-dark;
+    }
+    thead{
+        display: block;
+        float: left;
+        tr{
+            display: block
+        }
+    }
+    tbody{
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+        tr{
+            display: inline-block
+        }
+    }
+    td{
+        display: block;
+        min-height: 1.25em;
+    }
+}
+
+
+@media only screen and (max-width:  760px), (min-device-width:  768px) and (max-device-width:  1024px){
+    table,thead,tbody,th,td,tr{
+        display: block
+    }
+    caption{
+        display: block
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px
+    }
+    th{
+        text-align: center;
+        background-color: $border-menu
+    }
+    td{
+        border: none;
+        border-bottom: 1px solid $border-menu;
+        position: relative;
+        padding-left: 60px;
+        &:before{
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 60px;
+            padding-right: 10px;
+            white-space: nowrap;
+            content: attr(data-title) " "
+        }
+    }
+
+    .bigdata thead{
+        float: none;
+    }
+
+}

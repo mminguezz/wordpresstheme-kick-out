@@ -1,0 +1,18 @@
+.box-date{
+	padding: 2px 2px;
+	position: relative;
+	float: left;
+	background-color: $color-light;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 3px 6px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	max-width: 25px;
+	margin-right: $space;
+	.day {
+		font-weight: bolder;
+		font-size: 20px;
+	}
+}
