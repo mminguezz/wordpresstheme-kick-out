@@ -16,3 +16,4 @@ En el directorio "kick-out" esta el tema instalable de WordPress, cada directori
 ~~Uso [jsmin-php](https://github.com/rgrove/jsmin-php/) para minificar los archivos de JavaScript~~
 
 
+
