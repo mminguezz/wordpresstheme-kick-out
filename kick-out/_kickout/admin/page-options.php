@@ -14,7 +14,7 @@
 	/*
 		$info = array();
 		$args = array();
-
+## [TODO] - ¿? - APO: Add Page Option ?
 		$info['display'] = 'CMB';  // APO o CMB
 		$info['type'] = 'page';    // if CMB -> page, post ...  else if APO -> pagetitle
 
