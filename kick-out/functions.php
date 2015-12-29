@@ -36,4 +36,3 @@
 		include( TEMPLATEPATH . "/_kickout/theme-debug.php" );  // Funciones usadas durante la creaccion de temas completos
 	}
 
-?>
