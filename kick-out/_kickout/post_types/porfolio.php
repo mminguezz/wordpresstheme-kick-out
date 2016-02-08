@@ -29,7 +29,7 @@ function register_custom_post_type_porfolio() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 10,
+		'menu_position'       => 10,  // https://codex.wordpress.org/Function_Reference/register_post_type#menu_position
 		'menu_icon'           => 'dashicons-edit', // https://developer.wordpress.org/resource/dashicons/
 		'can_export'          => true,
 		'has_archive'         => true,
